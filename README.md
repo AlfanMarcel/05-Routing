@@ -19,3 +19,20 @@ membuat sebuah folder bernama profile dan di dalam folder tersebut terdapat file
         )
     }
 ![round](assets/01.png)
+
+Praktikum 2
+isi page.tsx pada second blog
+
+    export default function SecondBlog() {
+        return (
+            <h1>Second Blog</h1>
+        );
+    } 
+Output
+
+![round](assets/02.png)
+ - Apa kekurangan yang mungkin terjadi jika menggunakan pendekatan pada Praktikum 2 untuk menangani routing?
+
+* Nested routing dapat membuat kode menjadi lebih kompleks, terutama jika terdapat beberapa tingkat kedalaman nesting. Hal ini dapat membuat sulit untuk memahami aliran navigasi dalam aplikasi.
+
+Praktikum 3
