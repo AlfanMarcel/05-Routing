@@ -1,5 +1,10 @@
 export default function Blog() {
     return (
-          <h1>Blog</h1>
+        <div>
+            <h1>Blog</h1>
+            <h2>Blog first</h2>
+            <h2>Blog second</h2>
+        </div>
+          
     );
   }

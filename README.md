@@ -36,3 +36,52 @@ Output
 * Nested routing dapat membuat kode menjadi lebih kompleks, terutama jika terdapat beberapa tingkat kedalaman nesting. Hal ini dapat membuat sulit untuk memahami aliran navigasi dalam aplikasi.
 
 Praktikum 3
+
+- perbaikan Praktikum 2 dengan <i>Dynamic Routes</i>
+
+page.tsx pada folder blogs
+
+        export default function Blog() {
+            return (
+                <div>
+                    <h1>Blog</h1>
+                    <h2>Blog first</h2>
+                    <h2>Blog second</h2>
+                </div>
+                
+            );
+        }
+
+page.tsx pada folder [blogId]
+
+        type Props = {
+            params: {
+                blogId: string
+            }
+        }
+        
+        export default function BlogDetails({ params }: Props) {
+            return (
+                <h1>{params.blogId} Blog</h1>
+            )
+        }
+![round](assets/03.png)
+![round](assets/04.png)
+
+- Dengan menggunakan konsep Nested Routes dan Dynamic Routes, buatlah halaman dengan routing /products/[productId]/reviews/[reviewId]
+
+        type Props = {
+            params: {
+                productId : string
+                reviewId: string
+            }
+        }
+        
+        export default function ReviewDetails({ params }: Props) {
+            return (
+                <h1>Details about product {params.productId} and the no {params.reviewId} Review</h1>
+            )
+        }
+
+![round](assets/05.png)
+
