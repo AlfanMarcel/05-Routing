@@ -85,3 +85,24 @@ page.tsx pada folder [blogId]
 
 ![round](assets/05.png)
 
+Praktikum 4
+
+- Tambahkan link yang sebelumnya anda telah kerjakan!
+
+        import Link from "next/link";
+
+        export default function Home() {
+        return (
+                <div>
+                <h1>Welcome to Home</h1>
+                <Link href='/profile'>Profile</Link>
+                <Link href='/about'>About</Link>
+                <Link href='/blogs'>Blog</Link>
+                <Link href='/products'>Product</Link>
+                </div>
+        );
+        }
+dengan output:
+![round](assets/06.png)
+
+dimana jika diklik akan pindah ke halaman yang berhubungan
